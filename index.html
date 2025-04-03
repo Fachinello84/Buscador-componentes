@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Buscador de Componentes</title>
+  <script src="script.js" defer></script>
+  <style>
+    body { font-family: sans-serif; padding: 1rem; max-width: 500px; margin: auto; }
+    input, button { display: block; margin: 0.5rem 0; width: 100%; padding: 0.5rem; }
+    button { cursor: pointer; }
+    li { margin: 0.3rem 0; }
+    h1, h2 { margin-top: 1rem; }
+    #statusMsg { margin-top: 1rem; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Buscar Componentes</h1>
+    <input type="text" id="searchInput" placeholder="Digite o nome do componente">
+    <button id="searchBtn">Buscar</button>
+
+    <h2>Resultados</h2>
+    <ul id="resultsList"></ul>
+
+    <h2>Sites Cadastrados</h2>
+    <ul id="siteList"></ul>
+    <input type="text" id="siteName" placeholder="Nome do site">
+    <input type="text" id="siteUrl" placeholder="URL de busca com %s">
+    <button id="addSiteBtn">Adicionar Site</button>
+    <p id="statusMsg"></p>
+  </div>
+</body>
+</html>
